@@ -1,24 +1,22 @@
 # Handlebars::Precompiler::Rails
 
-TODO: Write a gem description
-
 ## Installation
+
+You'll need handlebars node precompiler. Install it with:
+
+    npm install handlebars -g
+
+More info about handlebars precompiler: [http://handlebarsjs.com/precompilation.html](http://handlebarsjs.com/precompilation.html)
 
 Add this line to your application's Gemfile:
 
-    gem 'handlebars-precompiler-rails'
+    group :development do
+      gem 'handlebars-precompiler-rails', git: 'git://github.com/felipeelias/handlebars-precompiler-rails.git'
+    end
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install handlebars-precompiler-rails
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 

@@ -13,5 +13,5 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = "handlebars-precompiler-rails"
   gem.require_paths = ["lib"]
-  gem.version       = Handlebars::Precompiler::Rails::VERSION
+  gem.version       = Handlebars::VERSION
 end

@@ -8,7 +8,8 @@ module Handlebars
         @reloader ||= Handlebars::Precompiler::Reloader.new
       end
 
-      initializer "handlebars.callbacks" do
+      initializer "handlebars.callbacks" do |app|
+        app.reloaders << Handlebars::Precompiler::Railtie.reloader
         ActionDispatch::Reloader.to_prepare do
           Handlebars::Precompiler::Railtie.reloader.execute_if_updated
         end

@@ -3,6 +3,8 @@ module Handlebars
     class Reloader
       attr_reader :paths, :reloader
 
+      delegate :updated?, :to => :reloader
+
       def initialize
         @paths    = Precompiler.files_to_watch
         @reloader = ActiveSupport::FileUpdateChecker.new(@paths, &self.method(:precompile!))

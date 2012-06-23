@@ -11,7 +11,7 @@ More info about handlebars precompiler: [http://handlebarsjs.com/precompilation.
 Add this line to your application's Gemfile:
 
     group :development do
-      gem 'handlebars-precompiler-rails', git: 'git://github.com/felipeelias/handlebars-precompiler-rails.git'
+      gem 'handlebars-precompiler', git: 'https://github.com/felipeelias/handlebars-precompiler'
     end
 
 And then execute:
